@@ -1,37 +1,46 @@
 <?php
 
-function task1() {
+function task1()
+{
     // TODO:
 }
 
-function task2() {
+function task2()
+{
     // TODO:
 }
 
-function task3() {
+function task3()
+{
     // TODO:
 }
 
-function task4() {
+function task4()
+{
     // TODO:
 }
 
-function task5() {
+function task5()
+{
     // TODO:
 }
 
-function task6() {
+function task6()
+{
     // TODO:
 }
 
-function task7() {
+function task7()
+{
     // TODO:
 }
 
-function task8() {
+function task8()
+{
     // TODO:
 }
 
-function task9() {
+function task9()
+{
     // TODO:
 }
