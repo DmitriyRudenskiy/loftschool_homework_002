@@ -1,22 +1,20 @@
 <?php
 
 // Подключаем задания
-$task1 = require_once('task_001.php');
-$task2 = require_once('task_002.php');
-// ...
+require_once('functions.php');
 
 // Магия которая пригодится в жизни
 ob_start();
 
 // начало вывода первого задания
 echo "<div class='jumbotron'>";
-$task1();
+task1();
 echo "</div>";
 // конец вывода первого задания
 
 // начало вывода второго задания
 echo "<div class='jumbotron'>";
-$task2();
+task2();
 echo "</div>";
 // конец вывода второго задания
 
