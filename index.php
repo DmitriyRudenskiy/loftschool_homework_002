@@ -6,8 +6,11 @@ require_once('functions.php');
 // Магия которая пригодится в жизни
 ob_start();
 
-// начало вывода первого задания
+/**
+ * Task 1
+ */
 echo "<div class='jumbotron'>";
+echo "<h2>Задание 1</h2>";
 
 // Вариант 1
 $data = [
@@ -29,12 +32,14 @@ $data = [
 ];
 
 echo "<p>", task1($data, true), "</p>";
-
 echo "</div>";
-// конец вывода первого задания
 
-// начало вывода второго задания
+
+/**
+ * Task 2
+ */
 echo "<div class='jumbotron'>";
+echo "<h2>Задание 2</h2>";
 
 $data = [1, 2, 3, 4, 5];
 
@@ -45,28 +50,42 @@ echo "<p>", task2($data, "*"), "</p>";
 $data = [16, 8, 2, 1];
 
 echo "<p>", task2($data, "/"), "</p>";
-
 echo "</div>";
-// конец вывода второго задания
 
 /**
  * Task 3
  */
 echo "<div class='jumbotron'>";
+echo "<h2>Задание 3</h2>";
 
 $data = [];
 
-echo "<p>", task2("+", 1, 2, 3, 4, 5), "</p>";
-echo "<p>", task2($data, "-", 1, 2, 3, 4, 5), "</p>";
-echo "<p>", task2($data, "*", 1, 2, 3, 4, 5), "</p>";
+echo "<p>", task3("+", 1, 2, 3, 4, 5), "</p>";
+echo "<p>", task3($data, "-", 1, 2, 3, 4, 5), "</p>";
+echo "<p>", task3($data, "*", 1, 2, 3, 4, 5), "</p>";
 
 $data = [16, 8, 2, 1];
 
-echo "<p>", task2($data, "/"), "</p>";
-
+echo "<p>", task3($data, "/"), "</p>";
 echo "</div>";
 
-// ...
+/**
+ * Task 4
+ */
+echo "<div class='jumbotron'>";
+echo "<h2>Задание 4</h2>";
+task4(1, 1);
+task4(8, 8);
+echo "</div>";
+
+/**
+ * Task 5
+ */
+echo "<div class='jumbotron'>";
+echo "<h2>Задание 5</h2>";
+echo "<p>", task5("Radar"), "</p>";
+echo "<p>", task5("12"), "</p>";
+echo "</div>";
 
 $content = ob_get_contents();
 ob_end_clean();
