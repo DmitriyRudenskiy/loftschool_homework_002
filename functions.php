@@ -5,9 +5,9 @@ function task1($arrayString, $flag = false)
     foreach ($arrayString as $value) {
         echo "<p>" . $value . "</p>";
     }
+
     if ($flag == true) {
         return implode($arrayString);
-
     }
 }
 
