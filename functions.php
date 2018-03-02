@@ -1,6 +1,11 @@
 <?php
 
-function task1($arrayString, $flag = false)
+/**
+ * @param array $arrayString
+ * @param bool $flag
+ * @return string
+ */
+function task1(array $arrayString, $flag = false)
 {
     foreach ($arrayString as $value) {
         echo "<p>" . $value . "</p>";
@@ -11,16 +16,53 @@ function task1($arrayString, $flag = false)
     }
 }
 
-function task2()
+/**
+ * @param array $data
+ * @param string $operator
+ * @return null
+ */
+function task2(array $data, string $operator)
 {
-    // TODO:
+    $result = array_shift($data);
+
+    foreach ($data as $value) {
+        switch ($operator) {
+            case "-":
+                $result -= $value;
+                break;
+            case "+":
+                $result += $value;
+                break;
+            case "*":
+                $result *= $value;
+                break;
+            case "/":
+                $result /= $value;
+                break;
+            default:
+                echo "Поддерживаются толко операции +, -, *, /";
+                return null;
+        }
+    }
+
+    echo $result;
 }
 
+/**
+ *
+ */
 function task3()
 {
-    // TODO:
+    $data = func_get_args();
+    $operator = array_shift($data);
+    task2($data, $operator);
 }
 
+/**
+ * @param integer $rowCount
+ * @param integer $colCount
+ * @return null
+ */
 function task4($rowCount, $colCount)
 {
     if ($rowCount < 1 || $colCount < 1) {
