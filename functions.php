@@ -8,10 +8,10 @@
 function task1(array $arrayString, $flag = false)
 {
     foreach ($arrayString as $value) {
-        echo "<p>" . $value . "</p>";
+        echo "<p>" , $value , "</p>";
     }
 
-    if ($flag == true) {
+    if ($flag) {
         return implode($arrayString);
     }
 }
